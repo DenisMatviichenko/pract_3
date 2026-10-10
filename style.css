@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background: white;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    background: white;
+    padding: 25px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.menu span {
+    font-size: 13px;
+    cursor: default;
+}
+
+.menu .active {
+    color: #7467e8;
+}
+
+.main {
+    padding: 30px 0 45px;
+}
+
+.main-box {
+    min-height: 530px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.38),
+            rgba(0, 0, 0, 0.08)
+        ),
+        url("img/la.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    padding: 70px;
+    color: white;
+}
+
+.hero-content {
+    max-width: 520px;
+}
+
+.main h1 {
+    font-size: 60px;
+    line-height: 1.05;
+    margin-bottom: 18px;
+}
+
+.main p {
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.small-text {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.email-form {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 480px;
+}
+
+.input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 15px;
+    font-size: 13px;
+    color: #888;
+}
+
+.btn {
+    background: #050505;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+    user-select: none;
+}
+
+.cities-section {
+    background: #faeaea;
+    padding: 60px 0 70px;
+}
+
+.cities {
+    max-width: 720px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 55px 80px;
+}
+
+.city {
+    text-align: center;
+}
+
+.city img {
+    width: 145px;
+    height: 145px;
+    margin: 0 auto 16px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.city h3 {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.city p {
+    font-size: 12px;
+    color: #555;
+}
+
+.content {
+    padding: 65px 0;
+}
+
+.section-title {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+.section-description {
+    color: #555;
+    font-size: 12px;
+    margin-bottom: 28px;
+}
+
+.purple {
+    color: #7769e9;
+}
+
+.new-york-image {
+    height: 450px;
+    object-fit: cover;
+    border-radius: 35px;
+    margin-bottom: 75px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 240px);
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.agents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.agents-image,
+.agents-info {
+    min-height: 440px;
+    border-radius: 25px;
+}
+
+.agents-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.agents-info {
+    background: #eeecff;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.agents-info h2 {
+    font-size: 38px;
+    line-height: 1.08;
+    margin-bottom: 18px;
+}
+
+.agents-info .features {
+    padding-left: 18px;
+    margin-bottom: 20px;
+}
+
+.agents-info .features p {
+    margin-bottom: 14px;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+}
+
+.agents-info .features p::before {
+    content: "•";
+    position: absolute;
+    left: -18px;
+}
+
+.apartments {
+    margin-bottom: 20px;
+}
+
+.apartments-image {
+    height: 550px;
+    object-fit: cover;
+    border-radius: 35px;
+}
+
+.contact {
+    background: #faeaea;
+    padding: 55px 0;
+}
+
+.contact h2 {
+    font-size: 38px;
+    margin-bottom: 7px;
+}
+
+.contact-description {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr auto;
+    gap: 12px;
+    align-items: center;
+}
+
+.field-label {
+    font-size: 12px;
+    color: #555;
+}
+
+.contact-input {
+    background: white;
+    color: #999;
+    font-size: 13px;
+    padding: 13px 18px;
+    border-radius: 30px;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.footer p {
+    font-size: 11px;
+    opacity: 0.9;
+    margin-bottom: 50px;
+}
+
+.footer-link {
+    color: #c4baff;
+    font-size: 11px;
+    text-decoration: underline;
+    cursor: default;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 94%;
+        max-width: 700px;
+    }
+
+    .main-box {
+        min-height: 470px;
+        padding: 45px;
+        border-radius: 25px;
+    }
+
+    .main h1 {
+        font-size: 48px;
+    }
+
+    .cities {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px;
+    }
+
+    .city img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .new-york-image {
+        height: 350px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .gallery img {
+        height: 250px;
+    }
+
+    .agents {
+        grid-template-columns: 1fr;
+    }
+
+    .agents-image {
+        height: 400px;
+    }
+
+    .agents-info {
+        min-height: auto;
+        padding: 40px;
+    }
+
+    .apartments-image {
+        height: 430px;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .field-label {
+        margin-top: 5px;
+    }
+
+    .contact-form .btn {
+        margin-top: 10px;
+        width: max-content;
+    }
+}
+
+@media (max-width: 520px) {
+    .container {
+        width: calc(100% - 24px);
+    }
+
+    .header {
+        padding: 18px 0;
+    }
+
+    .menu {
+        gap: 10px 18px;
+    }
+
+    .menu span {
+        font-size: 12px;
+    }
+
+    .main {
+        padding: 10px 0 30px;
+    }
+
+    .main-box {
+        min-height: 500px;
+        border-radius: 20px;
+        padding: 25px;
+        background-position: 60% center;
+    }
+
+    .main h1 {
+        font-size: 40px;
+    }
+
+    .email-form {
+        border-radius: 18px;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 8px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .email-form .btn {
+        width: 100%;
+    }
+
+    .cities-section {
+        padding: 45px 0;
+    }
+
+    .cities {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 15px;
+    }
+
+    .city img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .content {
+        padding: 45px 0;
+    }
+
+    .section-title,
+    .contact h2 {
+        font-size: 30px;
+    }
+
+    .new-york-image {
+        height: 280px;
+        border-radius: 20px;
+        margin-bottom: 45px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-bottom: 50px;
+    }
+
+    .gallery img {
+        height: 260px;
+        border-radius: 15px;
+    }
+
+    .agents {
+        margin-bottom: 55px;
+    }
+
+    .agents-image {
+        height: 300px;
+        min-height: 0;
+        border-radius: 20px;
+    }
+
+    .agents-info {
+        border-radius: 20px;
+        padding: 30px 25px;
+    }
+
+    .agents-info h2 {
+        font-size: 30px;
+    }
+
+    .apartments-image {
+        height: 350px;
+        border-radius: 20px;
+    }
+
+    .contact {
+        padding: 45px 0;
+    }
+
+    .contact-form .btn {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 45px 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .cities {
+        grid-template-columns: 1fr;
+    }
+
+    .city img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .main h1 {
+        font-size: 34px;
+    }
+}
